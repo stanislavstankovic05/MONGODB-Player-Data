@@ -1,0 +1,92 @@
+body {
+
+  background-repeat:no-repeat;
+  background-color:rgb(103, 152, 78);
+  background-size:cover;
+  background-attachment:fixed;
+  background-origin:border-box;
+  background-position: center center;
+  display: flex;
+  row-gap:1em;
+  flex-direction: column;
+  color:white;
+  font-family: sans-serif;
+}
+header {
+  display:flex;
+  flex-direction:column;
+  text-align:left;
+  border:solid black 0.2em;
+  background-color:rgba(0,0,0,0.8);
+}
+.menu {
+  display:inline-block;
+  right:1em;
+  flex-direction: column;
+  top:1em;
+  gap: 0;
+  position:fixed;
+  text-align:start;
+  z-index:1;
+}
+
+h2 {
+  text-indent: 0;
+}
+main {
+  font-size: large;
+}
+ul{
+  display:grid;
+  grid-template-columns: repeat( auto-fit, minmax(10em, 12em) );
+  grid-template-rows: auto;
+  grid-column-gap: 5em;
+  margin:1em;
+  max-width: 1000%;
+  height:auto;
+  color:black;
+}
+li {
+  width: 100%;
+  margin-top:1em;
+  display: inline;
+}
+form,label {
+  background-color: rgba(51, 73, 173, 0);
+}
+
+/* Stilul de bază pentru butoane */
+#update,#delete, #AddButton {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Stilul butonului Update */
+#update, #AddButton{
+  background-color: #4caf50; /* Verde vibrant */
+  color: #fff; /* Text alb */
+}
+
+/* Stilul butonului Delete */
+#delete {
+  background-color: #f44336; /* Rosu vibrant */
+  color: #fff; /* Text alb */
+}
+
+/* Efecte la hover */
+#delete :hover {
+  opacity: 3;
+}
+#update :hover {
+  opacity:3;
+}
+img{
+  display: contents;
+}
