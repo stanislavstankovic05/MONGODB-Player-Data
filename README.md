@@ -1,0 +1,1 @@
+A college project in Mongo database, where I store the data of football player. Then the website show the player's data and you can update, delete or add a new player in the database. The frontend was done in ReactJS.
